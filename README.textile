@@ -3,9 +3,9 @@ h1. Buzz Egyetem 2019/2020
 Kedves Hallgatók, ez a git repo a 2019/2020as Üzleti Szoftverfejlesztés a gyakorlatban anyagát fogja tartalmazni.
 A Presentations könyvtárban vannak a PDF diák, amiket a gyakorlaton előadok.
 
-h1. Ajánlott könyvek
+h1. Ajánlott könyvek / blogok
 
-    [1] Robert C. Martin: Clean Code: A Handbook of Agile Software Craftsmanship
-    [2] Robert C. Martin: Agile Software Development, Principles, Patterns, and Practices
-    [3] http://blog.cleancoder.com/
-    [4] Andrew Hunt, David Thomas: The Pragmatic Programmer: From Journeyman to Master
+Robert C. Martin: Clean Code: A Handbook of Agile Software Craftsmanship
+Robert C. Martin: Agile Software Development, Principles, Patterns, and Practices
+http://blog.cleancoder.com/
+Andrew Hunt, David Thomas: The Pragmatic Programmer: From Journeyman to Master
