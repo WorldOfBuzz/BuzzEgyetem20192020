@@ -21,5 +21,7 @@ public class LibraryController extends Controller{
 		}
 		
 		renderArgs.put("libraries", libraries);
+		
+		render("@Application.Library.libraryBooks");
 	}
 }

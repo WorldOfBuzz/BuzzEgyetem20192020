@@ -1,0 +1,33 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import play.db.jpa.GenericModel;
+
+@Entity
+@Table(name="library_book")
+public class LibraryBook extends GenericModel{
+
+	/**CREATE TABLE library_book (
+    library_book_id SERIAL,
+    ean text CHECK (ean LIKE '978%' AND length(ean) = 13),
+    library_id integer NOT NULL REFERENCES library (library_id),
+    title text NOT NULL,
+    author text NOT NULL,
+    page_number integer CHECK (page_number > 0),
+    CONSTRAINT library_book_pk PRIMARY KEY (library_book_id)
+);*/
+	
+	public Long libraryBookId;
+	
+	public String ean;
+	
+	public String title;
+	
+	public String author;
+	
+	public Integer pageNumber;
+	
+	
+}

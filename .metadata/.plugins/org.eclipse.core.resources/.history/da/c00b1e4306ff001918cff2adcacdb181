@@ -1,0 +1,3 @@
+Íme a két string együtt: ${mystring} <br/>
+
+A pontos idő: ${dateToOutput}

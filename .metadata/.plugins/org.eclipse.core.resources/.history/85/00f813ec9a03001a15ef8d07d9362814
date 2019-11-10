@@ -1,0 +1,26 @@
+#{extends 'main.html' /}
+#{set title:'Library Books' /}
+
+<h1>Könyvtárak</h1>
+
+<table style="margin-top: 10px;">
+	<tr>
+		<th>Vonalkód</th>
+		<th>Szerző</th>
+		<th>Cím</th>
+	</tr>
+
+#{list items:libraries, as:'library'}
+	<tr>
+		<td colspan="3">${library.libraryName}</td>
+	</tr>
+	#{list items:library.books, as:'book'}
+		<tr>
+			<td>${book.ean}</td>
+			<td>${book.author}</td>
+			<td>${book.title}</td>
+		</tr>
+	#{/list}	
+#{/list}
+
+</table>

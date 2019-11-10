@@ -1,0 +1,10 @@
+package models;
+
+public class Library {
+
+	public Long libraryId;
+	
+	public String libraryName;
+	
+	public Integer libraryPostCode;
+}

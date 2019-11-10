@@ -1,0 +1,25 @@
+package models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import play.db.jpa.GenericModel;
+
+@Entity
+@Table(name="library")
+public class Library extends GenericModel{
+
+	@Id
+	@GeneratedValue
+	@Column(name="library_id")
+	public Long libraryId;
+	
+	@Column(name="library_name")
+	public String libraryName;
+	
+	@Column(name="library_postcode")
+	public Integer libraryPostcode;
+}

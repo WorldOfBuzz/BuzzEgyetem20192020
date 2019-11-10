@@ -3,9 +3,8 @@
 	<classpathentry excluding="japidviews/**|rythm/**|views/**" kind="src" path="app"/>
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="src" path="docviewer"/>
-	
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/play-1.4.3.jar" sourcepath="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/src" />
+	<classpathentry exported="true" kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/play-1.4.3.jar" sourcepath="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/src"/>
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/modules/docviewer/lib/play-docviewer.jar"/>
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/mysql-connector-java-5.1.38.jar"/>
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/slf4j-log4j12-1.7.21.jar"/>
@@ -70,6 +69,7 @@
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/geronimo-servlet_2.5_spec-1.2.jar"/>
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/oval-1.85.jar"/>
 	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/jj-imaging.jar"/>
-	
+	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/play-1.4.x-9b0c385.jar"/>
+	<classpathentry kind="lib" path="/home/zsoltjanos/work/Egyetem/play-1.4.3/framework/lib/postgresql-42.2.8.jar"/>
 	<classpathentry kind="output" path="eclipse/classes"/>
 </classpath>

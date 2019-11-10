@@ -1,0 +1,19 @@
+package models;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="library")
+public class Library {
+
+	@Id
+	@GeneratedValue
+	public Long libraryId;
+	
+	public String libraryName;
+	
+	public Integer libraryPostCode;
+}

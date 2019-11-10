@@ -1,0 +1,16 @@
+package controllers;
+
+import play.mvc.Controller;
+
+public class HomeworkController extends Controller{
+
+	public static void homework(String input1, String input2) {
+		/**
+		 * a, b --> ab
+		 */
+		String concatenatedString = input1 + input2;
+		renderArgs.put("mystring", concatenatedString);
+		
+		render("@Application.homework");
+	}
+}

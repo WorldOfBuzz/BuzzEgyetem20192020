@@ -1,0 +1,9 @@
+package models;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name="library_book")
+public class LibraryBook {
+
+}

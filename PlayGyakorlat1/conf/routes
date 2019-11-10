@@ -8,6 +8,7 @@ GET		/test									Application.index_test
 GET		/dummyPage1								Application.dummyPage1
 GET		/myFirstView							MyFirstController.controllerExercise
 GET		/homework								HomeworkController.homework
+GET		/libraryBooks							LibraryController.libraryBooks
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
