@@ -35,5 +35,8 @@ public class LibraryBook extends GenericModel{
 	@Column(name="page_number")
 	public Integer pageNumber;
 	
+	@Column(name="is_raktaron")
+	public Boolean isRaktaron;
+	
 	
 }
