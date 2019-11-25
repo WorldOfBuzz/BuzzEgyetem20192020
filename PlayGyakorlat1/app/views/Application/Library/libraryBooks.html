@@ -3,28 +3,22 @@
 
 <h1>Könyvtárak</h1>
 
-<i>Dőlt betűs rész</i>
-<div style="font-style: italic">Dőlt 2</div>
+
+<div><a href="/createLibrary">Könyvtár létrehozása</a></div>
+
 <table style="margin-top: 10px;" border="1">
 	<tr>
-		<th>Vonalkód</th>
-		<th>Szerző</th>
-		<th>Cím</th>
+		<th>Könyvtár neve</th>
+		<th>Könyvtáradatok megjelenítése</th>
 	</tr>
-
-#{if libraries != null}
-	#{list items:libraries, as:'library'}
-		<tr>
-			<td colspan="3" align="center" style="font-weight: bold;">${library.libraryName}</td>
-		</tr>
-		#{list items:library.books, as:'book'}
+	#{if libraries != null}
+		#{list items:libraries, as:'library'}
 			<tr>
-				<td>${book.ean}</td>
-				<td>${book.author}</td>
-				<td>${book.title}</td>
+				<td>${library.libraryName}</td>
+				<td><a href="/libraryDetails?libraryId=${library.libraryId}">
+							Könyvtáradatok megjelenítése</a>
+				</td>
 			</tr>
-		#{/list}	
-	#{/list}
-#{/if}
-
+		#{/list} 
+	#{/if}
 </table>

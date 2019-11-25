@@ -1,0 +1,19 @@
+<h1>Könyvtár létrehozása</h1>
+
+<form action="createLibrary" method="post">
+	<div>
+		Könyvtár neve: <input type="text" name="libraryName" 
+								value="${flash.libraryName}"/>
+		<span style="color: red">#{error 'libraryName' /}</span>
+	</div>
+	<div>
+		Könyvtár irányítószáma: <input type="text" name="libraryPostcode" 
+										value="${flash.libraryPostcode}" />
+		<span style="color: red">#{error 'libraryPostcode' /}</span>
+	</div>
+	<div>
+		<input type="submit" value="Könyvtár létrehozása" />
+	</div>
+</form>
+
+<div><a href="/libraryBooks">Vissza</a></div>

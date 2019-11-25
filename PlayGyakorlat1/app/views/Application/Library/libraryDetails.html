@@ -1,0 +1,26 @@
+<h2>${library.libraryName} Könyvtár</h2>
+
+#{if flash.errorMessage != null}
+	<div style="color:red">${flash.errorMessage}</div>
+#{/if}
+
+<p>Irányítószám: ${library.libraryPostcode}</p>
+	
+<h3>Könyvei:</h3>
+<ul>
+	#{list items:library.books, as:'book'}
+		#{set cssProperty: 'normal' /}
+			
+		#{if !book.isRaktaron}
+			#{set cssProperty: 'italic' /}
+		#{/if}
+		<li style="font-style:${cssProperty}">
+		
+			${book.title} by ${book.author} (EAN: ${book.ean}). Azonosító: ${book.libraryBookId} 
+			<br/>
+			
+		</li>
+	#{/list}
+</ul>
+
+<a href="libraryBooks">Vissza</a>
