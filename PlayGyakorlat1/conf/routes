@@ -18,6 +18,11 @@ POST	/createLibrary							LibraryCreationController.createLibrary
 
 GET		/libraryDetails							LibraryDetailsController.libraryDetails
 
+GET		/createLibraryBook						LibraryBookCreationController.createLibraryBookForm
+POST	/createLibraryBook						LibraryBookCreationController.createLibraryBook
+
+GET		/deleteBook								LibraryBookDeleteController.deleteBook
+
 # Ignore favicon requests
 GET     /favicon.ico                            404
 

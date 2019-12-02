@@ -1,0 +1,44 @@
+<h1>Könyv hozzáadása</h1>
+
+<form action="createLibraryBook" method="post">
+	
+	<!-- minden form elemen a "name" határozza meg, hogy milyen néven kapjuk meg az értéket a szerveroldalon -->
+	<div>
+		Könyvtár:
+			<select name="libraryId">
+				#{list items:libraries, as:'library'}
+					<!-- A value az, amit a szerverre küld a form, tehát a változónk értéke a Java kódban -->
+					<!-- Az option tagek közti érték pedig, amit a user lát -->
+					<option value="${library.libraryId}" 
+						#{if flash.libraryId == library.libraryId.toString()} selected="selected" #{/if}>
+						${library.libraryName}
+					</option>
+				#{/list}
+			</select>
+			<span style="color: red">#{error 'libraryId' /}</span>
+	</div>
+	<!-- a flash-ben szerepelnek az előzőleg elküldött értékek -->
+	<div>
+		EAN: <input type="text" name="ean" value="${flash.ean}"/>
+		<span style="color: red">#{error 'ean' /}</span>
+	</div>
+	<div>
+		Cím: <input type="text" name="title" value="${flash.title}"/>
+		<span style="color: red">#{error 'title' /}</span>
+	</div>
+	<div>
+		Szerző: <input type="text" name="author" value="${flash.author}"/>
+		<span style="color: red">#{error 'author' /}</span>
+	</div>
+	<div>
+		Oldalszám: <input type="text" name="pageNumber" value="${flash.pageNumber}" />
+		<span style="color: red">#{error 'pageNumber' /}</span>
+	</div>
+	<div>
+		Raktáron: <input type="checkbox" name="isRaktaron" #{if flash.isRaktaron != null} checked="checked" #{/if}/>
+		<span style="color: red">#{error 'isRaktaron' /}</span>
+	</div>
+	<div>
+		<input type="submit" value="Könyv hozzáadása" />
+	</div>
+</form>

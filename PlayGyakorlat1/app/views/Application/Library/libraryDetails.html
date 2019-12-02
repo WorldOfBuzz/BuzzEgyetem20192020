@@ -18,7 +18,7 @@
 		
 			${book.title} by ${book.author} (EAN: ${book.ean}). Azonosító: ${book.libraryBookId} 
 			<br/>
-			
+			<a href="deleteBook?libraryBookId=${book.libraryBookId}">Törlés</a>
 		</li>
 	#{/list}
 </ul>

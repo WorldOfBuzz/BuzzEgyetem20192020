@@ -3,8 +3,12 @@
 
 <h1>Könyvtárak</h1>
 
+#{if flash.errorMessage != null}
+	<div><span style="color:red">${flash.errorMessage}</span></div>
+#{/if}
 
 <div><a href="/createLibrary">Könyvtár létrehozása</a></div>
+<div><a href="/createLibraryBook">Könyv létrehozása</a></div>
 
 <table style="margin-top: 10px;" border="1">
 	<tr>
